@@ -31,15 +31,6 @@ pipeline {
                 """
             }
         }
-        // stage('Build'){
-        //     steps{
-        //         sh """
-        //         zip -q -r frontend-${appVersion}.zip * -x Jenkinsfile -x frontend-${appVersion}.zip
-        //         ls -ltr
-        //         """
-        //     }
-        // }
-
         stage('Docker build'){
             steps{
                 sh """
